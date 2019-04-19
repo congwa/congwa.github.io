@@ -294,164 +294,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/对php的理解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/对php的理解/" class="post-title-link" itemprop="url">对php的理解</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-19 11:25:08" itemprop="dateModified" datetime="2019-04-19T11:25:08+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="php"><a href="#php" class="headerlink" title="php"></a>php</h1><p>##CGI<br>CGI是为了保证web server传递过来的数据是标准格式的</p>
-<p>##php-cgi<br>PHP的解释器是php-cgi，本身只能解析请求，返回结果，不会进程管理</p>
-<p>##Fastcgi<br>Fastcgi是用来提高CGI程序性能的，一个协议</p>
-<p>##PHP-FPM<br>实现了Fastcgi的程序，实现了 fast-cgi进行管理fast-cgi的进程的</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/网络攻击防御理解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -655,7 +497,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/建表规格的理解/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/vue动态组件&异步组件/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王聪">
@@ -675,7 +517,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/04/18/建表规格的理解/" class="post-title-link" itemprop="url">对建表规格的理解</a>
+                <a href="/2019/04/18/vue动态组件&异步组件/" class="post-title-link" itemprop="url">vue动态组件&异步组件</a>
               
             
           </h1>
@@ -717,7 +559,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-19 11:21:12" itemprop="dateModified" datetime="2019-04-19T11:21:12+08:00">2019-04-19</time>
+                <time title="修改时间：2019-04-19 11:18:15" itemprop="dateModified" datetime="2019-04-19T11:18:15+08:00">2019-04-19</time>
               
             
           </span>
@@ -753,199 +595,17 @@
       
         
           
-            <h1 id="建表规则"><a href="#建表规则" class="headerlink" title="建表规则"></a>建表规则</h1><p>一对多关系 可以建设关联表<br>不是一对多的关系不要建设关联表 尤其是多对多关系尽量在一个表中，便于查询<br>通过对不重复字段进行表连接</p>
+            <h1 id="动态组件-amp-异步组件"><a href="#动态组件-amp-异步组件" class="headerlink" title="动态组件 &amp; 异步组件"></a>动态组件 &amp; 异步组件</h1><p>###keep-alive<br>写法is<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;component v-bind:is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 失活的组件将会被缓存！--&gt;</span><br><span class="line">&lt;keep-alive&gt;</span><br><span class="line">  &lt;component v-bind:is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
+<p><code>currentTabComponent可以为组件的名称或者一个组件可渲染代码,component为动态组件关键字。</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- include：在所有component中只有home archive被缓存--&gt;</span><br><span class="line">&lt;!-- exclude：正好相反,表示被指出的不会被缓存 --&gt;</span><br><span class="line">&lt;!-- max：表示最大可缓存数量 --&gt;</span><br><span class="line">&lt;keep-alive include=&quot;home,archive&quot;&gt;</span><br><span class="line">    &lt;component :is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt; </span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
+<p>###异步组件<br>Vue 允许你以一个工厂函数的方式定义你的组件，这个工厂函数会异步解析你的组件定义。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(&apos;async-webpack-example&apos;, function (resolve,reject) &#123;</span><br><span class="line">  // 这个特殊的 `require` 语法将会告诉 webpack</span><br><span class="line">  // 自动将你的构建代码切割成多个包，这些包</span><br><span class="line">  // 会通过 Ajax 请求加载</span><br><span class="line">  require([&apos;./my-async-component&apos;], resolve)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(</span><br><span class="line">  &apos;async-webpack-example&apos;,</span><br><span class="line">  // 这个 `import` 函数会返回一个 `Promise` 对象。</span><br><span class="line">  () =&gt; import(&apos;./my-async-component&apos;)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">    //当使用局部注册的时候</span><br><span class="line">    components: &#123;</span><br><span class="line">    &apos;my-component&apos;: () =&gt; import(&apos;./my-async-component&apos;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这里的异步组件工厂函数也可以返回一个如下格式的对象：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const AsyncComponent = () =&gt; (&#123;</span><br><span class="line">  // 需要加载的组件 (应该是一个 `Promise` 对象)</span><br><span class="line">  component: import(&apos;./MyComponent.vue&apos;),</span><br><span class="line">  // 异步组件加载时使用的组件</span><br><span class="line">  loading: LoadingComponent,</span><br><span class="line">  // 加载失败时使用的组件</span><br><span class="line">  error: ErrorComponent,</span><br><span class="line">  // 展示加载时组件的延时时间。默认值是 200 (毫秒)</span><br><span class="line">  delay: 200,</span><br><span class="line">  // 如果提供了超时时间且组件加载也超时了，</span><br><span class="line">  // 则使用加载失败时使用的组件。默认值是：`Infinity`</span><br><span class="line">  timeout: 3000</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><code>写成这样的component:（）=&gt; asyncComponent()</code></p>
 
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/sql常用语句2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/sql常用语句2/" class="post-title-link" itemprop="url">sql常用语句2</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-19 11:17:01" itemprop="dateModified" datetime="2019-04-19T11:17:01+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="sql约束"><a href="#sql约束" class="headerlink" title="sql约束"></a>sql约束</h1><p>###NOT NULL</p>
-<ul>
-<li>NOT NULL 约束强制列不接受 NULL 值。</li>
-<li>NOT NULL 约束强制字段始终包含值。这意味着，如果不向字段添加值，就无法插入新记录或者更新记录。</li>
-</ul>
-<p>###UNIQUE<br>UNIQUE 约束唯一标识数据库表中的每条记录。</p>
-<ul>
-<li>UNIQUE 和 PRIMARY KEY 约束均为列或列集合提供了唯一性的保证。</li>
-<li>PRIMARY KEY 拥有自动定义的 UNIQUE 约束。</li>
-<li>请注意，每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束。<h3 id="DEFAULT"><a href="#DEFAULT" class="headerlink" title="DEFAULT"></a>DEFAULT</h3>DEFAULT 约束用于向列中插入默认值。<br>如果没有规定其他的值，那么会将默认值添加到所有的新记录。</li>
-</ul>
-<p>###CHECK<br>CHECK 约束用于限制列中的值的范围。</p>
-<ul>
-<li>如果对单个列定义 CHECK 约束，那么该列只允许特定的值。</li>
-<li>如果对一个表定义 CHECK 约束，那么此约束会在特定的列中对值进行限制。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//建表时候用法</span><br><span class="line">//1</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL,</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255),</span><br><span class="line">    CHECK (Id_P&gt;0)</span><br><span class="line">)</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL CHECK (Id_P&gt;0),</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255)</span><br><span class="line">)</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL,</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255),</span><br><span class="line">    CONSTRAINT chk_Person CHECK (Id_P&gt;0 AND City=&apos;Sandnes&apos;) //多个列定义约束</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">//创建约束</span><br><span class="line">ALTER TABLE Persons ADD CHECK (Id_P&gt;0)</span><br><span class="line"></span><br><span class="line">//如果需要命名 CHECK 约束，以及为多个列定义 CHECK 约束，请使用下面的 SQL 语法：</span><br><span class="line">ALTER TABLE Persons ADD CONSTRAINT chk_Person CHECK (Id_P&gt;0 AND City=&apos;Sandnes&apos;)</span><br><span class="line"></span><br><span class="line">//撤销 CHECK 约束，请使用下面的 SQL：</span><br><span class="line">ALTER TABLE Persons DROP CONSTRAINT chk_Person</span><br></pre></td></tr></table></figure>
-<p>###FOREIGN KEY (外键)<br>一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY。</p>
-<ul>
-<li>FOREIGN KEY 约束用于预防破坏表之间连接的动作。</li>
-<li>FOREIGN KEY 约束也能防止非法数据插入外键列，因为它必须是它指向的那个表中的值之一。</li>
-</ul>
-<h3 id="PRIMARY-KEY-主键"><a href="#PRIMARY-KEY-主键" class="headerlink" title="PRIMARY KEY  (主键)"></a>PRIMARY KEY  (主键)</h3><p>PRIMARY KEY 约束唯一标识数据库表中的每条记录。</p>
-<ul>
-<li>主键必须包含唯一的值。</li>
-<li>主键列不能包含 NULL 值。</li>
-<li>每个表都应该有一个主键，并且每个表只能有一个主键。</li>
-</ul>
-<p>###CONSTRAINT<br>约束用于限制加入表的数据的类型。</p>
-<p>可以在创建表时规定约束（通过 CREATE TABLE 语句），或者在表创建之后也可以（通过 ALTER TABLE 语句）。</p>
-<p>以下几种约束：</p>
-<pre><code>NOT NULL
-UNIQUE
-PRIMARY KEY
-FOREIGN KEY
-CHECK
-DEFAULT
-</code></pre>
           
         
       
@@ -1032,7 +692,7 @@ DEFAULT
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
