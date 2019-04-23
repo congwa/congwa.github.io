@@ -373,7 +373,7 @@
                 
               
 
-              <time title="创建时间：2019-04-23 09:57:41 / 修改时间：10:04:53" itemprop="dateCreated datePublished" datetime="2019-04-23T09:57:41+08:00">2019-04-23</time>
+              <time title="创建时间：2019-04-23 09:57:41 / 修改时间：10:32:40" itemprop="dateCreated datePublished" datetime="2019-04-23T09:57:41+08:00">2019-04-23</time>
             
 
             
@@ -417,6 +417,7 @@
             <p>#总结</p>
 <p>##的获取到手机状态栏的高度<br>反向思维<br>window.screen.height - window.innerHeight</p>
 <p>##几种前端json导出excel方法<br><a href="https://www.cnblogs.com/lxk233/p/10224164.html" target="_blank" rel="noopener">https://www.cnblogs.com/lxk233/p/10224164.html</a></p>
+<p>##待续</p>
 
           
         
@@ -593,683 +594,6 @@
 <p>##协程<br>因为多线程需要</p>
 <p><a href="https://www.jianshu.com/p/19fc8aca712c" target="_blank" rel="noopener">线程切换解释</a><br><a href="https://www.cnblogs.com/linzhanfly/p/9082895.html" target="_blank" rel="noopener">node的多线程、单线程解释和单线程造成的影响</a></p>
 
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/sql常用语句1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/sql常用语句1/" class="post-title-link" itemprop="url">sql常用语句</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-19 11:16:38" itemprop="dateModified" datetime="2019-04-19T11:16:38+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="字段"><a href="#字段" class="headerlink" title="字段"></a>字段</h1><p>###ALTER<br> <strong>ALTER TABLE 语句</strong></p>
-<p>ALTER TABLE 语句用于在已有的表中添加、修改或删除列。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">如需在表中添加列，请使用下列语法:</span><br><span class="line"></span><br><span class="line">ALTER TABLE table_name</span><br><span class="line">ADD column_name datatype</span><br><span class="line"></span><br><span class="line">要删除表中的列，请使用下列语法：</span><br><span class="line"></span><br><span class="line">ALTER TABLE table_name </span><br><span class="line">DROP COLUMN column_name</span><br><span class="line"></span><br><span class="line">注释：某些数据库系统不允许这种在数据库表中删除列的方式 (DROP COLUMN column_name)。</span><br><span class="line"></span><br><span class="line">要改变表中列的数据类型，请使用下列语法：</span><br><span class="line"></span><br><span class="line">ALTER TABLE table_name</span><br><span class="line">ALTER COLUMN column_name datatype</span><br></pre></td></tr></table></figure></p>
-<p>###CREATE INDEX</p>
-<p><strong>CREATE INDEX 语句用于在表中创建索引。</strong></p>
-<p>在不读取整个表的情况下，索引使数据库应用程序可以更快地查找数据。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE INDEX index_name</span><br><span class="line">ON table_name (column_name)</span><br><span class="line"></span><br><span class="line">//在表上创建一个唯一的索引。唯一的索引意味着两个行不能拥有相同的索引值。</span><br><span class="line">CREATE UNIQUE INDEX index_name</span><br><span class="line">ON table_name (column_name)</span><br></pre></td></tr></table></figure></p>
-<p>###DROP<br>通过使用 DROP 语句，可以轻松地删除索引、表和数据库。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name DROP INDEX index_name</span><br><span class="line">DROP DATABASE 数据库名称</span><br><span class="line">DROP TABLE 表名称</span><br></pre></td></tr></table></figure></p>
-<p>###AUTO INCREMENT<br><strong>Auto-increment 会在新记录插入表中时生成一个唯一的数字。</strong></p>
-<p>MySQL 使用 AUTO_INCREMENT 关键字来执行 auto-increment 任务。<br>默认地，AUTO_INCREMENT 的开始值是 1，每条新记录递增 1。<br>要让 AUTO_INCREMENT 序列以其他的值起始，请使用下列 SQL 语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    P_Id int NOT NULL AUTO_INCREMENT,</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255),</span><br><span class="line">    PRIMARY KEY (P_Id)</span><br><span class="line">)</span><br><span class="line">//要在 &quot;Persons&quot; 表中插入新记录，我们不必为 &quot;P_Id&quot; 列规定值（会自动添加一个唯一的值）：</span><br><span class="line">INSERT INTO Persons (FirstName,LastName) VALUES (&apos;Bill&apos;,&apos;Gates&apos;)</span><br><span class="line"></span><br><span class="line">ALTER TABLE Persons AUTO_INCREMENT=100</span><br></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/html5常用特性/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/html5常用特性/" class="post-title-link" itemprop="url">html5常用新特性</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-19 11:17:35" itemprop="dateModified" datetime="2019-04-19T11:17:35+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h3 id="Server-Sent-简称-SSE"><a href="#Server-Sent-简称-SSE" class="headerlink" title="Server-Sent  简称 SSE"></a><a href="http://www.ruanyifeng.com/blog/2017/05/server-sent_events.html" target="_blank" rel="noopener">Server-Sent</a>  简称 SSE</h3><p>使用流信息向浏览器推送信息。它基于 HTTP 协议</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">var eventSource = new EventSource(&quot;服务器推送地址&quot;);</span><br><span class="line"> //当通往服务器的连接被打开</span><br><span class="line"> eventSource.onopen = function () &#123;</span><br><span class="line">     console.log(&quot;连接打开...&quot;);</span><br><span class="line"> &#125;</span><br><span class="line">  //当错误发生</span><br><span class="line">  eventSource.onerror= function (e) &#123;</span><br><span class="line">      console.log(e);</span><br><span class="line">  &#125;;</span><br><span class="line">  //当接收到消息，此事件为默认事件</span><br><span class="line">  eventSource.onmessage = function (event) &#123;</span><br><span class="line">      console.log(&quot;onmessage...&quot;);</span><br><span class="line">  　　　　 eventSource.close()//关闭SSE链接</span><br><span class="line">  &#125;; </span><br><span class="line">  //另外的一种写法</span><br><span class="line">  eventSource.addEventListener(&apos;sentMessage&apos;, function (event) &#123; </span><br><span class="line">              var data = eval(&apos;(&apos;+event.data+&apos;)&apos;);//服务器端推送的数据，eval装换Json对象</span><br><span class="line">              var origin = event.origin;//服务器 URL 的域名部分，即协议、域名和端口，表示消息的来源。</span><br><span class="line">              var lastEventId = event.lastEventId;////数据的编号，由服务器端发送。如果没有编号，这个属性为空。</span><br><span class="line">              //此处根据需求编写业务逻辑</span><br><span class="line">              console.log(data);              &#125;, false);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">          //浏览器不支持server-sent events 所有主流浏览器均支持服务器发送事件，除了 Internet Explorer。</span><br><span class="line">          document.getElementById(&quot;result&quot;).innerHTML = &quot;Sorry, your browser does not support server-sent events...&quot;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>node服务器实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&quot;http&quot;);</span><br><span class="line"></span><br><span class="line">http.createServer(function (req, res) &#123;</span><br><span class="line">  var fileName = &quot;.&quot; + req.url;</span><br><span class="line"></span><br><span class="line">  if (fileName === &quot;./stream&quot;) &#123;</span><br><span class="line">    res.writeHead(200, &#123;</span><br><span class="line">      &quot;Content-Type&quot;:&quot;text/event-stream&quot;,</span><br><span class="line">      &quot;Cache-Control&quot;:&quot;no-cache&quot;,</span><br><span class="line">      &quot;Connection&quot;:&quot;keep-alive&quot;,</span><br><span class="line">      &quot;Access-Control-Allow-Origin&quot;: &apos;*&apos;,</span><br><span class="line">    &#125;);</span><br><span class="line">    res.write(&quot;retry: 10000\n&quot;);</span><br><span class="line">    res.write(&quot;event: connecttime\n&quot;);</span><br><span class="line">    res.write(&quot;data: &quot; + (new Date()) + &quot;\n\n&quot;);</span><br><span class="line">    res.write(&quot;data: &quot; + (new Date()) + &quot;\n\n&quot;);</span><br><span class="line"></span><br><span class="line">    interval = setInterval(function () &#123;</span><br><span class="line">      res.write(&quot;data: &quot; + (new Date()) + &quot;\n\n&quot;);</span><br><span class="line">    &#125;, 1000);</span><br><span class="line"></span><br><span class="line">    req.connection.addListener(&quot;close&quot;, function () &#123;</span><br><span class="line">      clearInterval(interval);</span><br><span class="line">    &#125;, false);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;).listen(8844, &quot;127.0.0.1&quot;);</span><br></pre></td></tr></table></figure></p>
-<p>##<a href="http://www.ruanyifeng.com/blog/2017/05/websocket.html" target="_blank" rel="noopener">websocket</a><br>客户端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var ws = new WebSocket(&quot;wss://echo.websocket.org&quot;);</span><br><span class="line"></span><br><span class="line">ws.onopen = function(evt) &#123; </span><br><span class="line">  console.log(&quot;Connection open ...&quot;); </span><br><span class="line">  ws.send(&quot;Hello WebSockets!&quot;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onmessage = function(evt) &#123;</span><br><span class="line">  console.log( &quot;Received Message: &quot; + evt.data);</span><br><span class="line">  ws.close();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onclose = function(evt) &#123;</span><br><span class="line">  console.log(&quot;Connection closed.&quot;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<p>node使用 µWebSockets，Socket.IO，WebSocket-Node实现都可以</p>
-<h2 id="web-sql"><a href="#web-sql" class="headerlink" title="web sql"></a><a href="http://www.runoob.com/html/html5-web-sql.html" target="_blank" rel="noopener">web sql</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var db = openDatabase(&apos;mydb&apos;, &apos;1.0&apos;, &apos;Test DB&apos;, 2 * 1024 * 1024);</span><br></pre></td></tr></table></figure>
-<h2 id="应用程序缓存"><a href="#应用程序缓存" class="headerlink" title="应用程序缓存"></a><a href="http://www.runoob.com/html/html5-app-cache.html" target="_blank" rel="noopener">应用程序缓存</a></h2><p><code>Cache Manifest</code><br>manifest 文件可分为三个部分：</p>
-<ol>
-<li>CACHE MANIFEST - 在此标题下列出的文件将在首次下载后进行缓存</li>
-<li>NETWORK - 在此标题下列出的文件需要与服务器的连接，且不会被缓存</li>
-<li>FALLBACK - 在此标题下列出的文件规定当页面无法访问时的回退页面（比如 404 页面） </li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html manifest=&quot;demo.appcache&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">文档内容......</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line">/theme.css</span><br><span class="line">/logo.gif</span><br><span class="line">/main.js</span><br><span class="line"></span><br><span class="line">NETWORK:</span><br><span class="line">login.php</span><br><span class="line"></span><br><span class="line">FALLBACK:</span><br><span class="line">/html/ /offline.html</span><br></pre></td></tr></table></figure>
-<p>##<a href="http://www.runoob.com/html/html5-webstorage.html" target="_blank" rel="noopener">web存储</a><br><code>localStorage</code> - 用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。<br><code>sessionStorage</code> - 用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/关闭php-fpm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/关闭php-fpm/" class="post-title-link" itemprop="url">关闭php-fpm</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-19 11:25:34" itemprop="dateModified" datetime="2019-04-19T11:25:34+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="php-fpm"><a href="#php-fpm" class="headerlink" title="php-fpm"></a>php-fpm</h1><p>sudo pkill -INT -o php-fpm 关闭</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/sql常用语句2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/sql常用语句2/" class="post-title-link" itemprop="url">sql常用语句2</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-19 11:17:01" itemprop="dateModified" datetime="2019-04-19T11:17:01+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="sql约束"><a href="#sql约束" class="headerlink" title="sql约束"></a>sql约束</h1><p>###NOT NULL</p>
-<ul>
-<li>NOT NULL 约束强制列不接受 NULL 值。</li>
-<li>NOT NULL 约束强制字段始终包含值。这意味着，如果不向字段添加值，就无法插入新记录或者更新记录。</li>
-</ul>
-<p>###UNIQUE<br>UNIQUE 约束唯一标识数据库表中的每条记录。</p>
-<ul>
-<li>UNIQUE 和 PRIMARY KEY 约束均为列或列集合提供了唯一性的保证。</li>
-<li>PRIMARY KEY 拥有自动定义的 UNIQUE 约束。</li>
-<li>请注意，每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束。<h3 id="DEFAULT"><a href="#DEFAULT" class="headerlink" title="DEFAULT"></a>DEFAULT</h3>DEFAULT 约束用于向列中插入默认值。<br>如果没有规定其他的值，那么会将默认值添加到所有的新记录。</li>
-</ul>
-<p>###CHECK<br>CHECK 约束用于限制列中的值的范围。</p>
-<ul>
-<li>如果对单个列定义 CHECK 约束，那么该列只允许特定的值。</li>
-<li>如果对一个表定义 CHECK 约束，那么此约束会在特定的列中对值进行限制。</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//建表时候用法</span><br><span class="line">//1</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL,</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255),</span><br><span class="line">    CHECK (Id_P&gt;0)</span><br><span class="line">)</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL CHECK (Id_P&gt;0),</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255)</span><br><span class="line">)</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL,</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255),</span><br><span class="line">    CONSTRAINT chk_Person CHECK (Id_P&gt;0 AND City=&apos;Sandnes&apos;) //多个列定义约束</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">//创建约束</span><br><span class="line">ALTER TABLE Persons ADD CHECK (Id_P&gt;0)</span><br><span class="line"></span><br><span class="line">//如果需要命名 CHECK 约束，以及为多个列定义 CHECK 约束，请使用下面的 SQL 语法：</span><br><span class="line">ALTER TABLE Persons ADD CONSTRAINT chk_Person CHECK (Id_P&gt;0 AND City=&apos;Sandnes&apos;)</span><br><span class="line"></span><br><span class="line">//撤销 CHECK 约束，请使用下面的 SQL：</span><br><span class="line">ALTER TABLE Persons DROP CONSTRAINT chk_Person</span><br></pre></td></tr></table></figure>
-<p>###FOREIGN KEY (外键)<br>一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY。</p>
-<ul>
-<li>FOREIGN KEY 约束用于预防破坏表之间连接的动作。</li>
-<li>FOREIGN KEY 约束也能防止非法数据插入外键列，因为它必须是它指向的那个表中的值之一。</li>
-</ul>
-<h3 id="PRIMARY-KEY-主键"><a href="#PRIMARY-KEY-主键" class="headerlink" title="PRIMARY KEY  (主键)"></a>PRIMARY KEY  (主键)</h3><p>PRIMARY KEY 约束唯一标识数据库表中的每条记录。</p>
-<ul>
-<li>主键必须包含唯一的值。</li>
-<li>主键列不能包含 NULL 值。</li>
-<li>每个表都应该有一个主键，并且每个表只能有一个主键。</li>
-</ul>
-<p>###CONSTRAINT<br>约束用于限制加入表的数据的类型。</p>
-<p>可以在创建表时规定约束（通过 CREATE TABLE 语句），或者在表创建之后也可以（通过 ALTER TABLE 语句）。</p>
-<p>以下几种约束：</p>
-<pre><code>NOT NULL
-UNIQUE
-PRIMARY KEY
-FOREIGN KEY
-CHECK
-DEFAULT
-</code></pre>
           
         
       
@@ -1507,6 +831,656 @@ DEFAULT
 <li>尾调用优化  js的尾调用优化必须在严格模式下开启</li>
 <li></li>
 </ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/sql常用语句1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王聪">
+      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王聪的个人网站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/18/sql常用语句1/" class="post-title-link" itemprop="url">sql常用语句</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-19 11:16:38" itemprop="dateModified" datetime="2019-04-19T11:16:38+08:00">2019-04-19</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="字段"><a href="#字段" class="headerlink" title="字段"></a>字段</h1><p>###ALTER<br> <strong>ALTER TABLE 语句</strong></p>
+<p>ALTER TABLE 语句用于在已有的表中添加、修改或删除列。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">如需在表中添加列，请使用下列语法:</span><br><span class="line"></span><br><span class="line">ALTER TABLE table_name</span><br><span class="line">ADD column_name datatype</span><br><span class="line"></span><br><span class="line">要删除表中的列，请使用下列语法：</span><br><span class="line"></span><br><span class="line">ALTER TABLE table_name </span><br><span class="line">DROP COLUMN column_name</span><br><span class="line"></span><br><span class="line">注释：某些数据库系统不允许这种在数据库表中删除列的方式 (DROP COLUMN column_name)。</span><br><span class="line"></span><br><span class="line">要改变表中列的数据类型，请使用下列语法：</span><br><span class="line"></span><br><span class="line">ALTER TABLE table_name</span><br><span class="line">ALTER COLUMN column_name datatype</span><br></pre></td></tr></table></figure></p>
+<p>###CREATE INDEX</p>
+<p><strong>CREATE INDEX 语句用于在表中创建索引。</strong></p>
+<p>在不读取整个表的情况下，索引使数据库应用程序可以更快地查找数据。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CREATE INDEX index_name</span><br><span class="line">ON table_name (column_name)</span><br><span class="line"></span><br><span class="line">//在表上创建一个唯一的索引。唯一的索引意味着两个行不能拥有相同的索引值。</span><br><span class="line">CREATE UNIQUE INDEX index_name</span><br><span class="line">ON table_name (column_name)</span><br></pre></td></tr></table></figure></p>
+<p>###DROP<br>通过使用 DROP 语句，可以轻松地删除索引、表和数据库。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE table_name DROP INDEX index_name</span><br><span class="line">DROP DATABASE 数据库名称</span><br><span class="line">DROP TABLE 表名称</span><br></pre></td></tr></table></figure></p>
+<p>###AUTO INCREMENT<br><strong>Auto-increment 会在新记录插入表中时生成一个唯一的数字。</strong></p>
+<p>MySQL 使用 AUTO_INCREMENT 关键字来执行 auto-increment 任务。<br>默认地，AUTO_INCREMENT 的开始值是 1，每条新记录递增 1。<br>要让 AUTO_INCREMENT 序列以其他的值起始，请使用下列 SQL 语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    P_Id int NOT NULL AUTO_INCREMENT,</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255),</span><br><span class="line">    PRIMARY KEY (P_Id)</span><br><span class="line">)</span><br><span class="line">//要在 &quot;Persons&quot; 表中插入新记录，我们不必为 &quot;P_Id&quot; 列规定值（会自动添加一个唯一的值）：</span><br><span class="line">INSERT INTO Persons (FirstName,LastName) VALUES (&apos;Bill&apos;,&apos;Gates&apos;)</span><br><span class="line"></span><br><span class="line">ALTER TABLE Persons AUTO_INCREMENT=100</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/关闭php-fpm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王聪">
+      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王聪的个人网站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/18/关闭php-fpm/" class="post-title-link" itemprop="url">关闭php-fpm</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-19 11:25:34" itemprop="dateModified" datetime="2019-04-19T11:25:34+08:00">2019-04-19</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="php-fpm"><a href="#php-fpm" class="headerlink" title="php-fpm"></a>php-fpm</h1><p>sudo pkill -INT -o php-fpm 关闭</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/vue动态组件&异步组件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王聪">
+      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王聪的个人网站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/18/vue动态组件&异步组件/" class="post-title-link" itemprop="url">vue动态组件&异步组件</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-19 11:18:15" itemprop="dateModified" datetime="2019-04-19T11:18:15+08:00">2019-04-19</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="动态组件-amp-异步组件"><a href="#动态组件-amp-异步组件" class="headerlink" title="动态组件 &amp; 异步组件"></a>动态组件 &amp; 异步组件</h1><p>###keep-alive<br>写法is<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;component v-bind:is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 失活的组件将会被缓存！--&gt;</span><br><span class="line">&lt;keep-alive&gt;</span><br><span class="line">  &lt;component v-bind:is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
+<p><code>currentTabComponent可以为组件的名称或者一个组件可渲染代码,component为动态组件关键字。</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- include：在所有component中只有home archive被缓存--&gt;</span><br><span class="line">&lt;!-- exclude：正好相反,表示被指出的不会被缓存 --&gt;</span><br><span class="line">&lt;!-- max：表示最大可缓存数量 --&gt;</span><br><span class="line">&lt;keep-alive include=&quot;home,archive&quot;&gt;</span><br><span class="line">    &lt;component :is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt; </span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
+<p>###异步组件<br>Vue 允许你以一个工厂函数的方式定义你的组件，这个工厂函数会异步解析你的组件定义。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(&apos;async-webpack-example&apos;, function (resolve,reject) &#123;</span><br><span class="line">  // 这个特殊的 `require` 语法将会告诉 webpack</span><br><span class="line">  // 自动将你的构建代码切割成多个包，这些包</span><br><span class="line">  // 会通过 Ajax 请求加载</span><br><span class="line">  require([&apos;./my-async-component&apos;], resolve)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(</span><br><span class="line">  &apos;async-webpack-example&apos;,</span><br><span class="line">  // 这个 `import` 函数会返回一个 `Promise` 对象。</span><br><span class="line">  () =&gt; import(&apos;./my-async-component&apos;)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">    //当使用局部注册的时候</span><br><span class="line">    components: &#123;</span><br><span class="line">    &apos;my-component&apos;: () =&gt; import(&apos;./my-async-component&apos;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这里的异步组件工厂函数也可以返回一个如下格式的对象：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const AsyncComponent = () =&gt; (&#123;</span><br><span class="line">  // 需要加载的组件 (应该是一个 `Promise` 对象)</span><br><span class="line">  component: import(&apos;./MyComponent.vue&apos;),</span><br><span class="line">  // 异步组件加载时使用的组件</span><br><span class="line">  loading: LoadingComponent,</span><br><span class="line">  // 加载失败时使用的组件</span><br><span class="line">  error: ErrorComponent,</span><br><span class="line">  // 展示加载时组件的延时时间。默认值是 200 (毫秒)</span><br><span class="line">  delay: 200,</span><br><span class="line">  // 如果提供了超时时间且组件加载也超时了，</span><br><span class="line">  // 则使用加载失败时使用的组件。默认值是：`Infinity`</span><br><span class="line">  timeout: 3000</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><code>写成这样的component:（）=&gt; asyncComponent()</code></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/html5常用特性/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王聪">
+      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王聪的个人网站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/18/html5常用特性/" class="post-title-link" itemprop="url">html5常用新特性</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-19 11:17:35" itemprop="dateModified" datetime="2019-04-19T11:17:35+08:00">2019-04-19</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h3 id="Server-Sent-简称-SSE"><a href="#Server-Sent-简称-SSE" class="headerlink" title="Server-Sent  简称 SSE"></a><a href="http://www.ruanyifeng.com/blog/2017/05/server-sent_events.html" target="_blank" rel="noopener">Server-Sent</a>  简称 SSE</h3><p>使用流信息向浏览器推送信息。它基于 HTTP 协议</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">var eventSource = new EventSource(&quot;服务器推送地址&quot;);</span><br><span class="line"> //当通往服务器的连接被打开</span><br><span class="line"> eventSource.onopen = function () &#123;</span><br><span class="line">     console.log(&quot;连接打开...&quot;);</span><br><span class="line"> &#125;</span><br><span class="line">  //当错误发生</span><br><span class="line">  eventSource.onerror= function (e) &#123;</span><br><span class="line">      console.log(e);</span><br><span class="line">  &#125;;</span><br><span class="line">  //当接收到消息，此事件为默认事件</span><br><span class="line">  eventSource.onmessage = function (event) &#123;</span><br><span class="line">      console.log(&quot;onmessage...&quot;);</span><br><span class="line">  　　　　 eventSource.close()//关闭SSE链接</span><br><span class="line">  &#125;; </span><br><span class="line">  //另外的一种写法</span><br><span class="line">  eventSource.addEventListener(&apos;sentMessage&apos;, function (event) &#123; </span><br><span class="line">              var data = eval(&apos;(&apos;+event.data+&apos;)&apos;);//服务器端推送的数据，eval装换Json对象</span><br><span class="line">              var origin = event.origin;//服务器 URL 的域名部分，即协议、域名和端口，表示消息的来源。</span><br><span class="line">              var lastEventId = event.lastEventId;////数据的编号，由服务器端发送。如果没有编号，这个属性为空。</span><br><span class="line">              //此处根据需求编写业务逻辑</span><br><span class="line">              console.log(data);              &#125;, false);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">          //浏览器不支持server-sent events 所有主流浏览器均支持服务器发送事件，除了 Internet Explorer。</span><br><span class="line">          document.getElementById(&quot;result&quot;).innerHTML = &quot;Sorry, your browser does not support server-sent events...&quot;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>node服务器实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">var http = require(&quot;http&quot;);</span><br><span class="line"></span><br><span class="line">http.createServer(function (req, res) &#123;</span><br><span class="line">  var fileName = &quot;.&quot; + req.url;</span><br><span class="line"></span><br><span class="line">  if (fileName === &quot;./stream&quot;) &#123;</span><br><span class="line">    res.writeHead(200, &#123;</span><br><span class="line">      &quot;Content-Type&quot;:&quot;text/event-stream&quot;,</span><br><span class="line">      &quot;Cache-Control&quot;:&quot;no-cache&quot;,</span><br><span class="line">      &quot;Connection&quot;:&quot;keep-alive&quot;,</span><br><span class="line">      &quot;Access-Control-Allow-Origin&quot;: &apos;*&apos;,</span><br><span class="line">    &#125;);</span><br><span class="line">    res.write(&quot;retry: 10000\n&quot;);</span><br><span class="line">    res.write(&quot;event: connecttime\n&quot;);</span><br><span class="line">    res.write(&quot;data: &quot; + (new Date()) + &quot;\n\n&quot;);</span><br><span class="line">    res.write(&quot;data: &quot; + (new Date()) + &quot;\n\n&quot;);</span><br><span class="line"></span><br><span class="line">    interval = setInterval(function () &#123;</span><br><span class="line">      res.write(&quot;data: &quot; + (new Date()) + &quot;\n\n&quot;);</span><br><span class="line">    &#125;, 1000);</span><br><span class="line"></span><br><span class="line">    req.connection.addListener(&quot;close&quot;, function () &#123;</span><br><span class="line">      clearInterval(interval);</span><br><span class="line">    &#125;, false);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;).listen(8844, &quot;127.0.0.1&quot;);</span><br></pre></td></tr></table></figure></p>
+<p>##<a href="http://www.ruanyifeng.com/blog/2017/05/websocket.html" target="_blank" rel="noopener">websocket</a><br>客户端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var ws = new WebSocket(&quot;wss://echo.websocket.org&quot;);</span><br><span class="line"></span><br><span class="line">ws.onopen = function(evt) &#123; </span><br><span class="line">  console.log(&quot;Connection open ...&quot;); </span><br><span class="line">  ws.send(&quot;Hello WebSockets!&quot;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onmessage = function(evt) &#123;</span><br><span class="line">  console.log( &quot;Received Message: &quot; + evt.data);</span><br><span class="line">  ws.close();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onclose = function(evt) &#123;</span><br><span class="line">  console.log(&quot;Connection closed.&quot;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>node使用 µWebSockets，Socket.IO，WebSocket-Node实现都可以</p>
+<h2 id="web-sql"><a href="#web-sql" class="headerlink" title="web sql"></a><a href="http://www.runoob.com/html/html5-web-sql.html" target="_blank" rel="noopener">web sql</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var db = openDatabase(&apos;mydb&apos;, &apos;1.0&apos;, &apos;Test DB&apos;, 2 * 1024 * 1024);</span><br></pre></td></tr></table></figure>
+<h2 id="应用程序缓存"><a href="#应用程序缓存" class="headerlink" title="应用程序缓存"></a><a href="http://www.runoob.com/html/html5-app-cache.html" target="_blank" rel="noopener">应用程序缓存</a></h2><p><code>Cache Manifest</code><br>manifest 文件可分为三个部分：</p>
+<ol>
+<li>CACHE MANIFEST - 在此标题下列出的文件将在首次下载后进行缓存</li>
+<li>NETWORK - 在此标题下列出的文件需要与服务器的连接，且不会被缓存</li>
+<li>FALLBACK - 在此标题下列出的文件规定当页面无法访问时的回退页面（比如 404 页面） </li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html manifest=&quot;demo.appcache&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">文档内容......</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line">/theme.css</span><br><span class="line">/logo.gif</span><br><span class="line">/main.js</span><br><span class="line"></span><br><span class="line">NETWORK:</span><br><span class="line">login.php</span><br><span class="line"></span><br><span class="line">FALLBACK:</span><br><span class="line">/html/ /offline.html</span><br></pre></td></tr></table></figure>
+<p>##<a href="http://www.runoob.com/html/html5-webstorage.html" target="_blank" rel="noopener">web存储</a><br><code>localStorage</code> - 用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。<br><code>sessionStorage</code> - 用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。</p>
 
           
         
@@ -1801,7 +1775,7 @@ DEFAULT
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/vue动态组件&异步组件/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/网络攻击防御理解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王聪">
@@ -1821,7 +1795,7 @@ DEFAULT
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/04/18/vue动态组件&异步组件/" class="post-title-link" itemprop="url">vue动态组件&异步组件</a>
+                <a href="/2019/04/18/网络攻击防御理解/" class="post-title-link" itemprop="url">网络攻击防御理解</a>
               
             
           </h2>
@@ -1863,7 +1837,7 @@ DEFAULT
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-19 11:18:15" itemprop="dateModified" datetime="2019-04-19T11:18:15+08:00">2019-04-19</time>
+                <time title="修改时间：2019-04-19 11:16:12" itemprop="dateModified" datetime="2019-04-19T11:16:12+08:00">2019-04-19</time>
               
             
           </span>
@@ -1899,16 +1873,55 @@ DEFAULT
       
         
           
-            <h1 id="动态组件-amp-异步组件"><a href="#动态组件-amp-异步组件" class="headerlink" title="动态组件 &amp; 异步组件"></a>动态组件 &amp; 异步组件</h1><p>###keep-alive<br>写法is<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;component v-bind:is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt;</span><br></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 失活的组件将会被缓存！--&gt;</span><br><span class="line">&lt;keep-alive&gt;</span><br><span class="line">  &lt;component v-bind:is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
-<p><code>currentTabComponent可以为组件的名称或者一个组件可渲染代码,component为动态组件关键字。</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- include：在所有component中只有home archive被缓存--&gt;</span><br><span class="line">&lt;!-- exclude：正好相反,表示被指出的不会被缓存 --&gt;</span><br><span class="line">&lt;!-- max：表示最大可缓存数量 --&gt;</span><br><span class="line">&lt;keep-alive include=&quot;home,archive&quot;&gt;</span><br><span class="line">    &lt;component :is=&quot;currentTabComponent&quot;&gt;&lt;/component&gt; </span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
-<p>###异步组件<br>Vue 允许你以一个工厂函数的方式定义你的组件，这个工厂函数会异步解析你的组件定义。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(&apos;async-webpack-example&apos;, function (resolve,reject) &#123;</span><br><span class="line">  // 这个特殊的 `require` 语法将会告诉 webpack</span><br><span class="line">  // 自动将你的构建代码切割成多个包，这些包</span><br><span class="line">  // 会通过 Ajax 请求加载</span><br><span class="line">  require([&apos;./my-async-component&apos;], resolve)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(</span><br><span class="line">  &apos;async-webpack-example&apos;,</span><br><span class="line">  // 这个 `import` 函数会返回一个 `Promise` 对象。</span><br><span class="line">  () =&gt; import(&apos;./my-async-component&apos;)</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">    //当使用局部注册的时候</span><br><span class="line">    components: &#123;</span><br><span class="line">    &apos;my-component&apos;: () =&gt; import(&apos;./my-async-component&apos;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>这里的异步组件工厂函数也可以返回一个如下格式的对象：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const AsyncComponent = () =&gt; (&#123;</span><br><span class="line">  // 需要加载的组件 (应该是一个 `Promise` 对象)</span><br><span class="line">  component: import(&apos;./MyComponent.vue&apos;),</span><br><span class="line">  // 异步组件加载时使用的组件</span><br><span class="line">  loading: LoadingComponent,</span><br><span class="line">  // 加载失败时使用的组件</span><br><span class="line">  error: ErrorComponent,</span><br><span class="line">  // 展示加载时组件的延时时间。默认值是 200 (毫秒)</span><br><span class="line">  delay: 200,</span><br><span class="line">  // 如果提供了超时时间且组件加载也超时了，</span><br><span class="line">  // 则使用加载失败时使用的组件。默认值是：`Infinity`</span><br><span class="line">  timeout: 3000</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<p><code>写成这样的component:（）=&gt; asyncComponent()</code></p>
+            <h1 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h1><p>浏览器的同源策略是 协议 域名 端口号</p>
+<ul>
+<li>cookie</li>
+</ul>
+<blockquote>
+<ol>
+<li>cookie的同源策略 仅仅只限域名 </li>
+<li>每次通讯服务器都会发送一个cookie，保存在cookie默认路径下</li>
+<li>经过测试,cookie在同域共享，留意cookie覆盖情况。</li>
+<li>cookie的访问路径默认为用户访问路径</li>
+<li>客户端向服务器通讯时，携带cookie(未禁用),cookie的会匹配父路径的所有cookie一同发送</li>
+<li>受不同浏览器url编码不同限制，cookie存储数据应该进行编码，不然有可能会导致中文乱码情况</li>
+<li>大小一般4kb</li>
+</ol>
+</blockquote>
+<ul>
+<li>sessionStorage</li>
+</ul>
+<blockquote>
+<ol>
+<li>浏览器同源策略下唯一</li>
+<li>每个浏览器签页唯一 页签关闭就删除</li>
+<li>一般最大5mb</li>
+</ol>
+</blockquote>
+<ul>
+<li>sessionStorage</li>
+</ul>
+<blockquote>
+<ol>
+<li>没有时间限制 存在硬盘中</li>
+<li>相同浏览器的不同页面间可以共享相同域名和端口相同的 localStorage</li>
+</ol>
+</blockquote>
+<p>###登陆验证<br>目前通常服务器登陆验证操作通过两种方式<br>1:jwt<br>2:cookie中保存了sessionId 通过sessionId去服务器取出session信息</p>
+<blockquote>
+<p>一个请求对应一个cookie,cookie中携带sessionid,每次请求服务器都可以(也可以选择不创建)创建一个session和生成一个sessionid，用户随意记录信息，session保存在服务器内存中,在服务器关闭或者到期后释放或者用户自己释放，通过sessionid进行获取。（不同服务器的session实现方式稍微不一样）</p>
+</blockquote>
+<p>###csrf<br>一次用户点击导致的惨案 -&gt; <a href="https://www.cnblogs.com/lovesong/p/5233195.html" target="_blank" rel="noopener">非常详细的例子</a><br>在网站使用jwt、sessionId的验证的方案的时候，如果用户有效的防范了xss攻击，非常难突破进行csrf攻击。(欢迎指正)</p>
+<p>###xss<br>在网站输入框写入可执行代码进行盗取用户登录信息</p>
+<h6 id="xss攻击主要分为两种方式"><a href="#xss攻击主要分为两种方式" class="headerlink" title="xss攻击主要分为两种方式"></a>xss攻击主要分为两种方式</h6><ul>
+<li>在url注入可执行代码  </li>
+<li>通过表单输入框提交注入可执行代码  </li>
+</ul>
+<h5 id="防御方法主要通过白名单检测进行防御-待续"><a href="#防御方法主要通过白名单检测进行防御-待续" class="headerlink" title="防御方法主要通过白名单检测进行防御(待续)"></a><strong>防御方法主要通过白名单检测进行防御(待续)</strong></h5><ul>
+<li>防御富文本后端 jsoup</li>
+<li>前端npm包 xss cssfilter</li>
+<li>koa-helmet</li>
+</ul>
 
           
         
