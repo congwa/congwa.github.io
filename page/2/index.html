@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next mist use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,21 +44,21 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="../../../../lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+<link rel="stylesheet" href="../../../../css/main.css?v=7.1.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../../images/apple-touch-icon-next.png?v=7.1.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../../../images/favicon-32x32-next.png?v=7.1.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=7.1.0" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../../../images/favicon-16x16-next.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="../../../../images/logo.svg?v=7.1.0" color="#222">
 
 
 
@@ -70,7 +70,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '7.1.0',
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
@@ -225,7 +225,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+    <a rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
 
   </li>
         
@@ -242,7 +242,7 @@
 
     
 
-    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+    <a rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
         
@@ -259,7 +259,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+    <a rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
 
   </li>
         
@@ -276,7 +276,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+    <a rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
 
@@ -328,12 +328,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/sql常用语句2/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com../../2019/04/18/ES6新增函数统计/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王聪">
       <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="../../images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -348,7 +348,7 @@
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/04/18/sql常用语句2/" class="post-title-link" itemprop="url">sql常用语句2</a>
+                <a href="../../2019/04/18/ES6新增函数统计/" class="post-title-link" itemprop="url">ES6新增函数统计</a>
               
             
           </h2>
@@ -390,7 +390,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-19 11:17:01" itemprop="dateModified" datetime="2019-04-19T11:17:01+08:00">2019-04-19</time>
+                <time title="修改时间：2019-04-19 11:06:12" itemprop="dateModified" datetime="2019-04-19T11:06:12+08:00">2019-04-19</time>
               
             
           </span>
@@ -426,198 +426,90 @@
       
         
           
-            <h1 id="sql约束"><a href="#sql约束" class="headerlink" title="sql约束"></a>sql约束</h1><p>###NOT NULL</p>
+            <h1 id="新增函数"><a href="#新增函数" class="headerlink" title="新增函数"></a>新增函数</h1><p>###number</p>
+<ol>
+<li>二进制和八进制写法</li>
+<li>Number.isFinite() 检测是都有限 是不是Infinity</li>
+<li>Number.isNaN()</li>
+<li>Number.parseInt() Number.parseFloat() 从string移植</li>
+<li>Number.isInteger() 是否为整数</li>
+<li>Number.EPSILON 表示 1 与大于 1 的最小浮点数之间的差 js可表示的最小量</li>
+<li>Number.isSafeInteger() 是否为有效数字</li>
+<li>Number.MAX_SAFE_INTEGER 极值最大量 2^53</li>
+<li>Number.MIN_SAFE_INTEGER 极值最小量 -2^53</li>
+</ol>
+<p>###math</p>
 <ul>
-<li>NOT NULL 约束强制列不接受 NULL 值。</li>
-<li>NOT NULL 约束强制字段始终包含值。这意味着，如果不向字段添加值，就无法插入新记录或者更新记录。</li>
+<li>Math.trunc() 去除一个数的小数部分</li>
+<li><p>Math.sign() 判断一个数到底是正数、负数、还是零。对于非数值，会先将其转换为数值。</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">参数为正数，返回+<span class="number">1</span>；</span><br><span class="line">参数为负数，返回<span class="number">-1</span>；</span><br><span class="line">参数为 <span class="number">0</span>，返回<span class="number">0</span>；</span><br><span class="line">参数为<span class="number">-0</span>，返回<span class="number">-0</span>;</span><br><span class="line">其他值，返回NaN。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Math.cbrt() 立方根</p>
+</li>
+<li>Math.clz32() 将参数转为 32 位无符号整数的形式，然后这个 32 位值里面有多少个前导 0。</li>
+<li>Math.imul() 返回两个数以 32 位带符号整数形式相乘的结果，返回的也是一个 32 位的带符号整数。</li>
+<li>Math.fround() 方法返回一个数的32位单精度浮点数形式<br>对于32位单精度格式来说，数值精度是24个二进制位（1 位隐藏位与 23 位有效位），所以对于 -224 至 224 之间的整数（不含两个端点），返回结果与参数本身一致。</li>
+<li>Math.hypot()  返回所有参数的平方和的平方根。<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3></li>
+<li>Object.is() 比较两个值是否相等 和 ===基本类似</li>
 </ul>
-<p>###UNIQUE<br>UNIQUE 约束唯一标识数据库表中的每条记录。</p>
+<p>Object.is({},{}) //false</p>
 <ul>
-<li>UNIQUE 和 PRIMARY KEY 约束均为列或列集合提供了唯一性的保证。</li>
-<li>PRIMARY KEY 拥有自动定义的 UNIQUE 约束。</li>
-<li>请注意，每个表可以有多个 UNIQUE 约束，但是每个表只能有一个 PRIMARY KEY 约束。<h3 id="DEFAULT"><a href="#DEFAULT" class="headerlink" title="DEFAULT"></a>DEFAULT</h3>DEFAULT 约束用于向列中插入默认值。<br>如果没有规定其他的值，那么会将默认值添加到所有的新记录。</li>
-</ul>
-<p>###CHECK<br>CHECK 约束用于限制列中的值的范围。</p>
+<li>Object.assign() </li>
+<li>Object.getOwnPropertyDescriptors() 返回某个对象属性的描述对象(非继承属性)</li>
+<li>Object.setPrototypeOf() 写操作 读取或者设置当前对象的prototype对象</li>
+<li>Object.getPrototypeOf() 读操作</li>
+<li>Object.keys()  返回key组成数组</li>
+<li>Object.values() 返回值组成的数组</li>
+<li>Object.entries() 返回一个数组 成员是参数对象自身的所有可勉励属性的键值对组成的数组</li>
+<li>Object.fromEntries() Object.entries()的逆操作，用于将一个键值对数组转为对象</li>
+<li>flat() 数组扁平化</li>
+<li>flatMap() 对原数组每个成员执行一个函数并且拉平<br>###string</li>
+<li>unicode表示法</li>
+<li><p>codePointAt() 返回字符码点 js字符以 UTF-16 的格式储存，每个字符固定2字节，4字节认为两个字符</p>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let s = '𠮷a';</span><br><span class="line"></span><br><span class="line">s.codePointAt(<span class="number">0</span>) <span class="comment">// 134071</span></span><br><span class="line">s.codePointAt(<span class="number">1</span>) <span class="comment">// 57271</span></span><br><span class="line"></span><br><span class="line">s.codePointAt(<span class="number">2</span>) <span class="comment">// 97</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>String.fromCodePoint()  cdoePointAt的反操作 范围一样 2字节</p>
+</li>
+<li>es6位字符串添加了<strong>遍历器</strong>接口</li>
+<li>normalize()   unicode正规化<blockquote>
 <ul>
-<li>如果对单个列定义 CHECK 约束，那么该列只允许特定的值。</li>
-<li>如果对一个表定义 CHECK 约束，那么此约束会在特定的列中对值进行限制。</li>
+<li>NFC，默认参数，表示“标准等价合成”（Normalization Form Canonical Composition），返回多个简单字符的合成字符。所谓“标准等价”指的是视觉和语义上的等价。</li>
+<li>NFD，表示“标准等价分解”（Normalization Form Canonical Decomposition），即在标准等价的前提下，返回合成字符分解的多个简单字符。</li>
+<li>NFKC，表示“兼容等价合成”（Normalization Form Compatibility Composition），返回合成字符。所谓“兼容等价”指的是语义上存在等价，但视觉上不等价，比如“囍”和“喜喜”。（这只是用来举例，normalize方法不能识别中文。）</li>
+<li>NFKD，表示“兼容等价分解”（Normalization Form Compatibility Decomposition），即在兼容等价的前提下，返回合成字符分解的多个简单字符。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//建表时候用法</span><br><span class="line">//1</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL,</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255),</span><br><span class="line">    CHECK (Id_P&gt;0)</span><br><span class="line">)</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL CHECK (Id_P&gt;0),</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255)</span><br><span class="line">)</span><br><span class="line">CREATE TABLE Persons</span><br><span class="line">(</span><br><span class="line">    Id_P int NOT NULL,</span><br><span class="line">    LastName varchar(255) NOT NULL,</span><br><span class="line">    FirstName varchar(255),</span><br><span class="line">    Address varchar(255),</span><br><span class="line">    City varchar(255),</span><br><span class="line">    CONSTRAINT chk_Person CHECK (Id_P&gt;0 AND City=&apos;Sandnes&apos;) //多个列定义约束</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">//创建约束</span><br><span class="line">ALTER TABLE Persons ADD CHECK (Id_P&gt;0)</span><br><span class="line"></span><br><span class="line">//如果需要命名 CHECK 约束，以及为多个列定义 CHECK 约束，请使用下面的 SQL 语法：</span><br><span class="line">ALTER TABLE Persons ADD CONSTRAINT chk_Person CHECK (Id_P&gt;0 AND City=&apos;Sandnes&apos;)</span><br><span class="line"></span><br><span class="line">//撤销 CHECK 约束，请使用下面的 SQL：</span><br><span class="line">ALTER TABLE Persons DROP CONSTRAINT chk_Person</span><br></pre></td></tr></table></figure>
-<p>###FOREIGN KEY (外键)<br>一个表中的 FOREIGN KEY 指向另一个表中的 PRIMARY KEY。</p>
+</blockquote>
+</li>
+<li>includes(), startsWith(), endsWith()</li>
+</ul>
 <ul>
-<li>FOREIGN KEY 约束用于预防破坏表之间连接的动作。</li>
-<li>FOREIGN KEY 约束也能防止非法数据插入外键列，因为它必须是它指向的那个表中的值之一。</li>
+<li>includes()：返回布尔值，表示是否找到了参数字符串。</li>
+<li>startsWith()：返回布尔值，表示参数字符串是否在原字符串的头部。</li>
+<li>endsWith()：返回布尔值，表示参数字符串是否在原字符串的尾部。</li>
 </ul>
-<h3 id="PRIMARY-KEY-主键"><a href="#PRIMARY-KEY-主键" class="headerlink" title="PRIMARY KEY  (主键)"></a>PRIMARY KEY  (主键)</h3><p>PRIMARY KEY 约束唯一标识数据库表中的每条记录。</p>
 <ul>
-<li>主键必须包含唯一的值。</li>
-<li>主键列不能包含 NULL 值。</li>
-<li>每个表都应该有一个主键，并且每个表只能有一个主键。</li>
+<li>repeat() 返回一个新的字符串 将原字符串重复n次</li>
+<li><p>padStart() padEnd() 字符串长度补全功能</p>
+<p><code>&#39;x&#39;.padStart(5, &#39;ab&#39;) // &#39;ababx&#39;</code></p>
+</li>
+<li>matchAll()  返回一个正则表达式在当前字符串的所有匹配</li>
+<li>模板字符串</li>
+<li>String.raw() 填充模板字符串的处理函数<br>###函数的扩展</li>
+<li>rest …</li>
+<li>length属性 表示参数有默认值的数量</li>
+<li>从 ES5 开始，函数内部可以设定为严格模式</li>
 </ul>
-<p>###CONSTRAINT<br>约束用于限制加入表的数据的类型。</p>
-<p>可以在创建表时规定约束（通过 CREATE TABLE 语句），或者在表创建之后也可以（通过 ALTER TABLE 语句）。</p>
-<p>以下几种约束：</p>
-<pre><code>NOT NULL
-UNIQUE
-PRIMARY KEY
-FOREIGN KEY
-CHECK
-DEFAULT
-</code></pre>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/建表规格的理解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/建表规格的理解/" class="post-title-link" itemprop="url">对建表规格的理解</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-19 11:21:12" itemprop="dateModified" datetime="2019-04-19T11:21:12+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="建表规则"><a href="#建表规则" class="headerlink" title="建表规则"></a>建表规则</h1><p>一对多关系 可以建设关联表<br>不是一对多的关系不要建设关联表 尤其是多对多关系尽量在一个表中，便于查询<br>通过对不重复字段进行表连接</p>
+<p>ES2016 做了一点修改，规定只要函数参数使用了默认值、解构赋值、或者扩展运算符，那么函数内部就不能显式设定为严格模式，否则会报错</p>
+<ul>
+<li>name属性 函数有个name的属性，返回函数的函数名</li>
+<li>箭头函数</li>
+<li>:: 双冒号运算符 取代call、apply、bind的调用</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">foo::bar;</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line">bar.bind(foo);</span><br><span class="line"></span><br><span class="line">foo::bar(...arguments);</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line">bar.apply(foo, <span class="built_in">arguments</span>);</span><br><span class="line"></span><br><span class="line">如果双冒号运算符的运算结果，还是一个对象，就可以采用链式写法。</span><br><span class="line">getPlayers()</span><br><span class="line">::map(<span class="function"><span class="params">x</span> =&gt;</span> x.character())</span><br><span class="line">::takeWhile(<span class="function"><span class="params">x</span> =&gt;</span> x.strength &gt; <span class="number">100</span>)</span><br><span class="line">::forEach(<span class="function"><span class="params">x</span> =&gt;</span> <span class="built_in">console</span>.log(x));</span><br></pre></td></tr></table></figure>
+<ul>
+<li>尾调用优化  js的尾调用优化必须在严格模式下开启</li>
+<li></li>
+</ul>
 
           
         
@@ -674,12 +566,12 @@ DEFAULT
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/对php的理解/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com../../2019/04/18/对php的理解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王聪">
       <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="../../images/avatar.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -694,7 +586,7 @@ DEFAULT
           <h2 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/04/18/对php的理解/" class="post-title-link" itemprop="url">对php的理解</a>
+                <a href="../../2019/04/18/对php的理解/" class="post-title-link" itemprop="url">对Php的理解</a>
               
             
           </h2>
@@ -817,11 +709,173 @@ DEFAULT
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com../../2019/04/18/sql常用语句1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王聪">
+      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
+      <meta itemprop="image" content="../../images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王聪的个人网站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="../../2019/04/18/sql常用语句1/" class="post-title-link" itemprop="url">Sql常用语句</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-19 11:16:38" itemprop="dateModified" datetime="2019-04-19T11:16:38+08:00">2019-04-19</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="字段"><a href="#字段" class="headerlink" title="字段"></a>字段</h1><p>###ALTER<br> <strong>ALTER TABLE 语句</strong></p>
+<p>ALTER TABLE 语句用于在已有的表中添加、修改或删除列。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">如需在表中添加列，请使用下列语法:</span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name</span><br><span class="line"><span class="keyword">ADD</span> column_name datatype</span><br><span class="line"></span><br><span class="line">要删除表中的列，请使用下列语法：</span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name </span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">COLUMN</span> column_name</span><br><span class="line"></span><br><span class="line">注释：某些数据库系统不允许这种在数据库表中删除列的方式 (<span class="keyword">DROP</span> <span class="keyword">COLUMN</span> column_name)。</span><br><span class="line"></span><br><span class="line">要改变表中列的数据类型，请使用下列语法：</span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">COLUMN</span> column_name datatype</span><br></pre></td></tr></table></figure></p>
+<p>###CREATE INDEX</p>
+<p><strong>CREATE INDEX 语句用于在表中创建索引。</strong></p>
+<p>在不读取整个表的情况下，索引使数据库应用程序可以更快地查找数据。<br><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">INDEX</span> index_name</span><br><span class="line"><span class="keyword">ON</span> table_name (column_name)</span><br><span class="line"></span><br><span class="line">//在表上创建一个唯一的索引。唯一的索引意味着两个行不能拥有相同的索引值。</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> index_name</span><br><span class="line"><span class="keyword">ON</span> table_name (column_name)</span><br></pre></td></tr></table></figure></p>
+<p>###DROP<br>通过使用 DROP 语句，可以轻松地删除索引、表和数据库。<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> table_name <span class="keyword">DROP</span> <span class="keyword">INDEX</span> index_name</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">DATABASE</span> 数据库名称</span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> 表名称</span><br></pre></td></tr></table></figure></p>
+<p>###AUTO INCREMENT<br><strong>Auto-increment 会在新记录插入表中时生成一个唯一的数字。</strong></p>
+<p>MySQL 使用 AUTO_INCREMENT 关键字来执行 auto-increment 任务。<br>默认地，AUTO_INCREMENT 的开始值是 1，每条新记录递增 1。<br>要让 AUTO_INCREMENT 序列以其他的值起始，请使用下列 SQL 语法：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> Persons</span><br><span class="line">(</span><br><span class="line">    P_Id <span class="built_in">int</span> <span class="keyword">NOT</span> <span class="literal">NULL</span> AUTO_INCREMENT,</span><br><span class="line">    LastName <span class="built_in">varchar</span>(<span class="number">255</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">    FirstName <span class="built_in">varchar</span>(<span class="number">255</span>),</span><br><span class="line">    Address <span class="built_in">varchar</span>(<span class="number">255</span>),</span><br><span class="line">    City <span class="built_in">varchar</span>(<span class="number">255</span>),</span><br><span class="line">    PRIMARY <span class="keyword">KEY</span> (P_Id)</span><br><span class="line">)</span><br><span class="line">//要在 <span class="string">"Persons"</span> 表中插入新记录，我们不必为 <span class="string">"P_Id"</span> 列规定值（会自动添加一个唯一的值）：</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> Persons (FirstName,LastName) <span class="keyword">VALUES</span> (<span class="string">'Bill'</span>,<span class="string">'Gates'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> Persons AUTO_INCREMENT=<span class="number">100</span></span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="../../"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="../../">1</a><span class="page-number current">2</span>
   </nav>
 
 
@@ -861,7 +915,7 @@ DEFAULT
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="../../archives/">
                 
                     <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">日志</span>
@@ -1014,38 +1068,39 @@ DEFAULT
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script src="../../lib/jquery/index.js?v=2.1.3"></script>
 
   
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  <script src="../../lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/utils.js?v=7.1.0"></script>
-
-  <script src="/js/motion.js?v=7.1.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/schemes/muse.js?v=7.1.0"></script>
-
+  <script src="../../lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
+
+  <script src="../../js/utils.js?v=7.1.0"></script>
+
+  <script src="../../js/motion.js?v=7.1.0"></script>
+
+
+
+  
   
 
 
-  <script src="/js/next-boot.js?v=7.1.0"></script>
+  <script src="../../js/schemes/muse.js?v=7.1.0"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="../../js/next-boot.js?v=7.1.0"></script>
 
 
   
@@ -1096,6 +1151,41 @@ DEFAULT
   
 
   
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('复制成功');
+        else $(this).text('复制失败');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('复制');
+      }, 300);
+    }).append(e);
+  })
+</script>
+
 
   
 
