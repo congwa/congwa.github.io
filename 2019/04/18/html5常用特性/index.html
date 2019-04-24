@@ -1,102 +1,41 @@
 <!DOCTYPE html>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+<html lang>
+  <head><meta name="generator" content="Hexo 3.8.0">
+    
+<meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="description" content="Html5常用新特性">
+
+
+
+
+  <meta name="keywords" content="html5,">
 
 
 
 
 
+  <link rel="alternate" href="../../../../default" title="王聪的个人网站">
 
 
 
 
+  <link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico?v=1.1">
 
 
 
+<link rel="canonical" href="http://yoursite.com/2019/04/18/html5常用特性/">
 
 
-
-
-
-
-
-
-
-
-
-
-<link rel="stylesheet" href="../../../../lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="../../../../css/main.css?v=7.1.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="../../../../images/apple-touch-icon-next.png?v=7.1.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="../../../../images/favicon-32x32-next.png?v=7.1.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="../../../../images/favicon-16x16-next.png?v=7.1.0">
-
-
-  <link rel="mask-icon" href="../../../../images/logo.svg?v=7.1.0" color="#222">
-
-
-
-
-
-
-
-<script id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    version: '7.1.0',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
-    back2top: true,
-    back2top_sidebar: false,
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-  
-
-
-
-
-  <meta name="description" content="HTML5Server-Sent  简称 SSE使用流信息向浏览器推送信息。它基于 HTTP 协议 12345678910111213141516171819202122232425var eventSource = new EventSource(&quot;服务器推送地址&quot;); //当通往服务器的连接被打开 eventSource.onopen = function () &amp;#123;     cons">
+<meta name="description" content="HTML5Server-Sent  简称 SSE使用流信息向浏览器推送信息。它基于 HTTP 协议 12345678910111213141516171819202122232425var eventSource = new EventSource(&quot;服务器推送地址&quot;); //当通往服务器的连接被打开 eventSource.onopen = function () &amp;#123;     cons">
 <meta name="keywords" content="html5">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Html5常用新特性">
@@ -110,319 +49,88 @@
 <meta name="twitter:description" content="HTML5Server-Sent  简称 SSE使用流信息向浏览器推送信息。它基于 HTTP 协议 12345678910111213141516171819202122232425var eventSource = new EventSource(&quot;服务器推送地址&quot;); //当通往服务器的连接被打开 eventSource.onopen = function () &amp;#123;     cons">
 
 
+<link rel="stylesheet" type="text/css" href="../../../../css/style.css?v=1.1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
 
-  
-  
-  <link rel="canonical" href="http://yoursite.com/2019/04/18/html5常用特性/">
 
 
-
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
   };
 </script>
 
-  <title>Html5常用新特性 | 王聪的个人网站</title>
+
+
+
   
 
 
 
+    <title> Html5常用新特性 - 王聪的个人网站 </title>
+  </head>
 
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="../../../../." class="logo">王聪的个人网站</a>
+    </h1>
 
-
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">王聪的个人网站</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-    
-      
-        <h1 class="site-subtitle" itemprop="description">前端|后端|node|php|golang</h1>
-      
-    
-    
-  </div>
-
-  <div class="site-nav-toggle">
-    <button aria-label="切换导航栏">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href>
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href>
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
 </div>
 
-
-
-<nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
+      </header>
+      <div id="content">
         
+    <div id="primary">
         
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
         
-          
-          <li class="menu-item menu-item-home">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
+          Html5常用新特性
         
-        
-        
-          
-          <li class="menu-item menu-item-about">
+      </h1>
 
-    
-    
-    
-      
-    
-
-    
-
-    <a rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-    
-
-  
-
-  
-</nav>
-
-
-
-  
-
-
-
-</div>
+      <time class="post-time">
+          4月 18 2019
+      </time>
     </header>
 
-    
 
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="../../../../images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
 
     
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">Html5常用新特性
-
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-19 11:17:35" itemprop="dateModified" datetime="2019-04-19T11:17:35+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h3 id="Server-Sent-简称-SSE"><a href="#Server-Sent-简称-SSE" class="headerlink" title="Server-Sent  简称 SSE"></a><a href="http://www.ruanyifeng.com/blog/2017/05/server-sent_events.html" target="_blank" rel="noopener">Server-Sent</a>  简称 SSE</h3><p>使用流信息向浏览器推送信息。它基于 HTTP 协议</p>
+            <div class="post-content">
+            <h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h3 id="Server-Sent-简称-SSE"><a href="#Server-Sent-简称-SSE" class="headerlink" title="Server-Sent  简称 SSE"></a><a href="http://www.ruanyifeng.com/blog/2017/05/server-sent_events.html" target="_blank" rel="noopener">Server-Sent</a>  简称 SSE</h3><p>使用流信息向浏览器推送信息。它基于 HTTP 协议</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> eventSource = <span class="keyword">new</span> EventSource(<span class="string">"服务器推送地址"</span>);</span><br><span class="line"> <span class="comment">//当通往服务器的连接被打开</span></span><br><span class="line"> eventSource.onopen = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">     <span class="built_in">console</span>.log(<span class="string">"连接打开..."</span>);</span><br><span class="line"> &#125;</span><br><span class="line">  <span class="comment">//当错误发生</span></span><br><span class="line">  eventSource.onerror= <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(e);</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="comment">//当接收到消息，此事件为默认事件</span></span><br><span class="line">  eventSource.onmessage = <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">"onmessage..."</span>);</span><br><span class="line">  　　　　 eventSource.close()<span class="comment">//关闭SSE链接</span></span><br><span class="line">  &#125;; </span><br><span class="line">  <span class="comment">//另外的一种写法</span></span><br><span class="line">  eventSource.addEventListener(<span class="string">'sentMessage'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">event</span>) </span>&#123; </span><br><span class="line">              <span class="keyword">var</span> data = <span class="built_in">eval</span>(<span class="string">'('</span>+event.data+<span class="string">')'</span>);<span class="comment">//服务器端推送的数据，eval装换Json对象</span></span><br><span class="line">              <span class="keyword">var</span> origin = event.origin;<span class="comment">//服务器 URL 的域名部分，即协议、域名和端口，表示消息的来源。</span></span><br><span class="line">              <span class="keyword">var</span> lastEventId = event.lastEventId;<span class="comment">////数据的编号，由服务器端发送。如果没有编号，这个属性为空。</span></span><br><span class="line">              <span class="comment">//此处根据需求编写业务逻辑</span></span><br><span class="line">              <span class="built_in">console</span>.log(data);              &#125;, <span class="literal">false</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="comment">//浏览器不支持server-sent events 所有主流浏览器均支持服务器发送事件，除了 Internet Explorer。</span></span><br><span class="line">          <span class="built_in">document</span>.getElementById(<span class="string">"result"</span>).innerHTML = <span class="string">"Sorry, your browser does not support server-sent events..."</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <p>node服务器实现<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">"http"</span>);</span><br><span class="line"></span><br><span class="line">http.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> fileName = <span class="string">"."</span> + req.url;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (fileName === <span class="string">"./stream"</span>) &#123;</span><br><span class="line">    res.writeHead(<span class="number">200</span>, &#123;</span><br><span class="line">      <span class="string">"Content-Type"</span>:<span class="string">"text/event-stream"</span>,</span><br><span class="line">      <span class="string">"Cache-Control"</span>:<span class="string">"no-cache"</span>,</span><br><span class="line">      <span class="string">"Connection"</span>:<span class="string">"keep-alive"</span>,</span><br><span class="line">      <span class="string">"Access-Control-Allow-Origin"</span>: <span class="string">'*'</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">    res.write(<span class="string">"retry: 10000\n"</span>);</span><br><span class="line">    res.write(<span class="string">"event: connecttime\n"</span>);</span><br><span class="line">    res.write(<span class="string">"data: "</span> + (<span class="keyword">new</span> <span class="built_in">Date</span>()) + <span class="string">"\n\n"</span>);</span><br><span class="line">    res.write(<span class="string">"data: "</span> + (<span class="keyword">new</span> <span class="built_in">Date</span>()) + <span class="string">"\n\n"</span>);</span><br><span class="line"></span><br><span class="line">    interval = setInterval(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      res.write(<span class="string">"data: "</span> + (<span class="keyword">new</span> <span class="built_in">Date</span>()) + <span class="string">"\n\n"</span>);</span><br><span class="line">    &#125;, <span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line">    req.connection.addListener(<span class="string">"close"</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      clearInterval(interval);</span><br><span class="line">    &#125;, <span class="literal">false</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;).listen(<span class="number">8844</span>, <span class="string">"127.0.0.1"</span>);</span><br></pre></td></tr></table></figure></p>
 <p>##<a href="http://www.ruanyifeng.com/blog/2017/05/websocket.html" target="_blank" rel="noopener">websocket</a><br>客户端<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">"wss://echo.websocket.org"</span>);</span><br><span class="line"></span><br><span class="line">ws.onopen = <span class="function"><span class="keyword">function</span>(<span class="params">evt</span>) </span>&#123; </span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Connection open ..."</span>); </span><br><span class="line">  ws.send(<span class="string">"Hello WebSockets!"</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onmessage = <span class="function"><span class="keyword">function</span>(<span class="params">evt</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log( <span class="string">"Received Message: "</span> + evt.data);</span><br><span class="line">  ws.close();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onclose = <span class="function"><span class="keyword">function</span>(<span class="params">evt</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"Connection closed."</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
@@ -438,418 +146,87 @@
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">CACHE MANIFEST</span><br><span class="line">/theme.css</span><br><span class="line">/logo.gif</span><br><span class="line">/main.js</span><br><span class="line"></span><br><span class="line">NETWORK:</span><br><span class="line">login.php</span><br><span class="line"></span><br><span class="line">FALLBACK:</span><br><span class="line">/html/ /offline.html</span><br></pre></td></tr></table></figure>
 <p>##<a href="http://www.runoob.com/html/html5-webstorage.html" target="_blank" rel="noopener">web存储</a><br><code>localStorage</code> - 用于长久保存整个网站的数据，保存的数据没有过期时间，直到手动去除。<br><code>sessionStorage</code> - 用于临时保存同一窗口(或标签页)的数据，在关闭窗口或标签页之后将会删除这些数据。</p>
 
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
+            </div>
           
-            <a href="../../../../tags/html5/" rel="tag"># html5</a>
-          
-        </div>
-      
 
-      
-      
-      
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="../../../../tags/html5/">html5</a>
+		  
+		</div>
+		
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="../关闭php-fpm/" rel="next" title="关闭Php-Fpm">
-                <i class="fa fa-chevron-left"></i> 关闭Php-Fpm
-              </a>
-            
-          </div>
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="../进程线程的理解/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">对进程线程的理解</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="../php配置相关路径/">
+        <span class="next-text nav-default">Php配置相关路径</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
 
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="../vue动态组件&异步组件/" rel="prev" title="Vue动态组件&异步组件">
-                Vue动态组件&异步组件 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
+        
+  <div class="comments" id="comments">
+    
   </div>
-  
-  
-  
+
+
+      </footer>
+    
   </article>
 
-
-  </div>
-
-
-          </div>
-          
-
-  
-
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
     </div>
-  </div>
 
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">王聪</p>
-              <div class="site-description motion-element" itemprop="description">热爱前端、后端，致力于成为全栈工程师</div>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="../../../../archives/">
-                
-                    <span class="site-state-item-count">13</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">9</span>
-                    <span class="site-state-item-name">标签</span>
-                  
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2019
+    <span class="footer-author">王聪.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
 
-            
-            
-            
-            
+      </footer>
 
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML5"><span class="nav-number">1.</span> <span class="nav-text">HTML5</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Server-Sent-简称-SSE"><span class="nav-number">1.0.1.</span> <span class="nav-text">Server-Sent  简称 SSE</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web-sql"><span class="nav-number">1.1.</span> <span class="nav-text">web sql</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用程序缓存"><span class="nav-number">1.2.</span> <span class="nav-text">应用程序缓存</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
-
-      
-
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
     </div>
-  </aside>
-  
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">王聪</span>
-
-  
-
-  
-</div>
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
+
 
     
 
-    
-
-    
-  </div>
-
-  
-
-<script>
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
   
-  <script src="../../../../lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script src="../../../../lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="../../../../lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="../../../../js/utils.js?v=7.1.0"></script>
-
-  <script src="../../../../js/motion.js?v=7.1.0"></script>
-
-
-
-  
-  
-
-
-  <script src="../../../../js/schemes/muse.js?v=7.1.0"></script>
-
-
-
-
-  
-  <script src="../../../../js/scrollspy.js?v=7.1.0"></script>
-<script src="../../../../js/post-details.js?v=7.1.0"></script>
-
-
-
-  
-
-
-  <script src="../../../../js/next-boot.js?v=7.1.0"></script>
-
-
+    <script type="text/javascript" src="../../../../lib/jquery/jquery-3.1.1.min.js"></script>
   
 
   
 
-  
+    <script type="text/javascript" src="../../../../js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="../../../../js/src/bootstrap.js?v=1.1"></script>
 
-  
-
-
-  
-
-
-  
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  <script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-<script>
-  $('.highlight').each(function(i, e) {
-    var $wrap = $('<div>').addClass('highlight-wrap');
-    $(e).after($wrap);
-    $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function(e) {
-      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
-        return $(e).text();
-      }).toArray().join('\n');
-      var ta = document.createElement('textarea');
-      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
-      ta.style.top = yPosition + 'px'; // Prevent page scroll
-      ta.style.position = 'absolute';
-      ta.style.opacity = '0';
-      ta.readOnly = true;
-      ta.value = code;
-      document.body.appendChild(ta);
-      ta.select();
-      ta.setSelectionRange(0, code.length);
-      ta.readOnly = false;
-      var result = document.execCommand('copy');
-      
-        if (result) $(this).text('复制成功');
-        else $(this).text('复制失败');
-      
-      ta.blur(); // For iOS
-      $(this).blur();
-    })).on('mouseleave', function(e) {
-      var $b = $(this).find('.copy-btn');
-      setTimeout(function() {
-        $b.text('复制');
-      }, 300);
-    }).append(e);
-  })
-</script>
-
-
-  
-
-  
-
-</body>
+  </body>
 </html>
