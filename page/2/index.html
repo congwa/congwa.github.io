@@ -328,172 +328,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/建表规格的理解/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="王聪">
-      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="王聪的个人网站">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/18/建表规格的理解/" class="post-title-link" itemprop="url">对建表规格的理解</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-24 17:08:06" itemprop="dateModified" datetime="2019-04-24T17:08:06+08:00">2019-04-24</time>
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              建表规则一对多关系 可以建设关联表不是一对多的关系不要建设关联表 尤其是多对多关系尽量在一个表中，便于查询通过对不重复字段进行表连接
-
-              
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/04/18/建表规格的理解/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/对php的理解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -662,7 +496,7 @@ PHP-FPM实现了Fastcgi的程序，实现了 fast-cgi进行
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/html5常用特性/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/网络攻击防御理解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="王聪">
@@ -682,7 +516,7 @@ PHP-FPM实现了Fastcgi的程序，实现了 fast-cgi进行
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/04/18/html5常用特性/" class="post-title-link" itemprop="url">html5常用新特性</a>
+                <a href="/2019/04/18/网络攻击防御理解/" class="post-title-link" itemprop="url">网络攻击防御理解</a>
               
             
           </h1>
@@ -724,7 +558,7 @@ PHP-FPM实现了Fastcgi的程序，实现了 fast-cgi进行
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-24 17:09:41" itemprop="dateModified" datetime="2019-04-24T17:09:41+08:00">2019-04-24</time>
+                <time title="修改时间：2019-04-24 17:09:08" itemprop="dateModified" datetime="2019-04-24T17:09:08+08:00">2019-04-24</time>
               
             
           </span>
@@ -761,14 +595,193 @@ PHP-FPM实现了Fastcgi的程序，实现了 fast-cgi进行
         
           
             <p>
-              HTML5Server-Sent  简称 SSE使用流信息向浏览器推送信息。它基于 HTTP 协议
-var eventSource = new EventSource("服务器推送地址"); //当通往服务器的连接被打开 eventSource.onopen = function () &#123;
+              同源策略浏览器的同源策略是 协议 域名 端口号
+
+cookie
+
+
+
+cookie的同源策略 仅仅只限域名 
+每次通讯服务器都会发送一个cookie，保存在cookie默认路径下
+经过测试,cookie在同域共享，留意cookie覆盖情况。
+cookie的访问路径默认为用户访问路径
+客户端向服务器通
               ...
             </p>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/04/18/html5常用特性/#more" rel="contents">
+              <a class="btn" href="/2019/04/18/网络攻击防御理解/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/18/php配置相关路径/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王聪">
+      <meta itemprop="description" content="热爱前端、后端，致力于成为全栈工程师">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="王聪的个人网站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/04/18/php配置相关路径/" class="post-title-link" itemprop="url">php配置相关路径</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-04-18 17:11:27" itemprop="dateCreated datePublished" datetime="2019-04-18T17:11:27+08:00">2019-04-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-24 17:09:47" itemprop="dateModified" datetime="2019-04-24T17:09:47+08:00">2019-04-24</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>
+              PHP安装文件查找sudo find / -name “php.ini”
+安装路径
+/private/etc/php-fpm.conf
+/usr/local/etc/nginx nginx安装路径
+/private/etc  php.conf
+/private/etc/php-fpm.d www.c
+              ...
+            </p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/04/18/php配置相关路径/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1062,9 +1075,7 @@ var eventSource = new EventSource("服务器推送地址"); //当通往服务器
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
